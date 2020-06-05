@@ -13,6 +13,7 @@ import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.co
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { TypographyComponent } from './typography/typography.component';
+import { ToolComponent } from './tool/tool.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { TypographyComponent } from './typography/typography.component';
     ProgressSpinnerComponent,
     SidebarComponent,
     ToolbarComponent,
-    TypographyComponent
+    TypographyComponent,
+    ToolComponent
     
   ],
   imports: [
