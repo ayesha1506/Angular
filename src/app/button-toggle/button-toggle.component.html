@@ -1,0 +1,42 @@
+<div>
+    <mat-button-toggle #toggleBtn>Toggle</mat-button-toggle>
+    {{toggleBtn.checked}}
+  </div>
+  
+  <div>
+    <mat-button-toggle #toggleBtnNr disableRipple>Toggle with no Ripple Effect</mat-button-toggle>
+    {{toggleBtnNr.checked}}
+  </div>
+  
+  
+  <div>
+    <mat-button-toggle #toggleBtnDisabled disabled>Disabled Toggle</mat-button-toggle>
+    {{toggleBtnDisabled.checked}}
+  </div>
+  
+  <div>
+    <mat-button-toggle-group>
+      <mat-button-toggle value="angular">Angular</mat-button-toggle>
+      <mat-button-toggle value="react">React</mat-button-toggle>
+      <mat-button-toggle value="vue">VueJS</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+  
+  <div>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">VueJS</mat-button-toggle>
+  </mat-button-toggle-group>
+    <b>{{toggleGroup.value}}</b>
+  </div>
+  
+  <div>
+    <mat-button-toggle-group #toggleGroupM="matButtonToggleGroup" multiple>
+      <mat-button-toggle value="angular">Angular</mat-button-toggle>
+      <mat-button-toggle value="react">React</mat-button-toggle>
+      <mat-button-toggle value="vue">VueJS</mat-button-toggle>
+    </mat-button-toggle-group>
+    <b>{{toggleGroupM.value}}</b>
+  </div>
+  

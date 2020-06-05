@@ -1,0 +1,12 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav [(opened)]="opened" mode="side" align="start" opened>
+      Sidenav content
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <button mat-raised-button color="primary" (click)="sidenav.open()">Open</button>
+      <button mat-raised-button color="accent" (click)="sidenav.close()">Close</button>
+      <button mat-raised-button color="warn" (click)="sidenav.toggle()">Toggle</button>
+    </mat-sidenav-content>
+    <!-- Body -->
+</mat-sidenav-container>
+
